@@ -1,0 +1,256 @@
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# exit
+logout
+There are stopped jobs.
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# exit
+logout
+Vim: Caught deadly signal HUP
+Vim: preserving files...
+Vim: Finished.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Connection to 143.198.158.36 closed.
+
+C:\Users\HP>ssh root@143.198.158.36
+root@143.198.158.36's password:
+Welcome to Ubuntu 22.10 (GNU/Linux 5.19.0-23-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Dec  5 19:49:56 UTC 2022
+
+  System load:  0.0                Users logged in:       0
+  Usage of /:   11.4% of 24.06GB   IPv4 address for eth0: 143.198.158.36  Memory usage: 58%                IPv4 address for eth0: 10.48.0.5
+  Swap usage:   0%                 IPv4 address for eth1: 10.124.0.2
+  Processes:    95
+
+9 updates can be applied immediately.
+3 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+
+*** System restart required ***
+Last login: Mon Dec  5 17:24:18 2022 from 191.108.152.131
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~# ls
+proyectone  snap  taller_bd.sql  taller_db.sql
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~# cd proyectone
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone# rm -r carlos_moreno
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone# ls
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone# ls -l
+total 0
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone# git clone https://github.com/Charbrown08/carlos_moreno.git
+Cloning into 'carlos_moreno'...
+remote: Enumerating objects: 33, done.
+remote: Counting objects: 100% (33/33), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 33 (delta 6), reused 24 (delta 6), pack-reused 0
+Receiving objects: 100% (33/33), 5.65 KiB | 5.65 MiB/s, done.
+Resolving deltas: 100% (6/6), done.
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone# ls
+carlos_moreno
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone# cd carlos_moreno
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# nano cv.hmtl
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# ls -l
+total 12
+-rw-r--r-- 1 root root   41 Dec  5 19:51 README.md
+drwxr-xr-x 2 root root 4096 Dec  5 19:51 css
+-rw-r--r-- 1 root root 2544 Dec  5 19:51 cv.html
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# NANO cv.html
+NANO: command not found
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# sudo apt-get install nano
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+nano is already the newest version (6.4-1).
+0 upgraded, 0 newly installed, 0 to remove and 11 not upgraded.
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# nano cv.html
+
+
+
+
+
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   cv.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git diff
+diff --git a/cv.html b/cv.html
+index ac4ee9e..000ee56 100644
+--- a/cv.html
++++ b/cv.html
+@@ -10,6 +10,7 @@
+ <body>
+     <header>
+         <h1>Ingineer & Admin: Carlos Moreno</h1>
++       <h3>habilidades y conocimiento</h3>
+     </header>
+     <div class="container">
+         <div class="content">
+@@ -22,4 +23,4 @@
+     </div>
+
+ </body>
+-</html>
+\ No newline at end of file
++</html>
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git pull origin master
+From https://github.com/Charbrown08/carlos_moreno
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git commit -am 'hv5 habilidades y conocimeientos'
+[master 6d4d684] hv5 habilidades y conocimeientos
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git pull origin master
+From https://github.com/Charbrown08/carlos_moreno
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git push origin master
+Username for 'https://github.com': octomarciano@gmail.com
+Password for 'https://octomarciano@gmail.com@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Charbrown08/carlos_moreno.git/'
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git push origin master
+Username for 'https://github.com': charbrown95
+Password for 'https://charbrown95@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Charbrown08/carlos_moreno.git/'
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git push origin master
+Username for 'https://github.com': octomarciano@gmail.com
+Password for 'https://octomarciano@gmail.com@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Charbrown08/carlos_moreno.git/'
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git push origin master
+Username for 'https://github.com': charbrown95
+Password for 'https://charbrown95@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Charbrown08/carlos_moreno.git/'
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git pull origin master
+From https://github.com/Charbrown08/carlos_moreno
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git push origin master
+Username for 'https://github.com': octomarciano@gmail.com
+Password for 'https://octomarciano@gmail.com@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Charbrown08/carlos_moreno.git/'
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git pull origin master
+From https://github.com/Charbrown08/carlos_moreno
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git push origin master
+Username for 'https://github.com': octomarciano@gmail.com
+Password for 'https://octomarciano@gmail.com@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Charbrown08/carlos_moreno.git/'
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git pull origin master
+From https://github.com/Charbrown08/carlos_moreno
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git push origin master
+Username for 'https://github.com': octomarciano@gmail.com
+Password for 'https://octomarciano@gmail.com@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Charbrown08/carlos_moreno.git/'
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git config -l
+user.name=thomas
+user.email=octomarciano@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/Charbrown08/carlos_moreno.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git config --global user.name 'charbrown95'
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git config -l
+user.name=charbrown95
+user.email=octomarciano@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/Charbrown08/carlos_moreno.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git pull origin master
+From https://github.com/Charbrown08/carlos_moreno
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git push origin master
+Username for 'https://github.com': charbrown95
+Password for 'https://charbrown95@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Charbrown08/carlos_moreno.git/'
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git push origin master
+Username for 'https://github.com': octomarciano@gmail.com
+Password for 'https://octomarciano@gmail.com@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Charbrown08/carlos_moreno.git/'
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git push origin master
+Username for 'https://github.com': octomarciano@gmail.com
+Password for 'https://octomarciano@gmail.com@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Charbrown08/carlos_moreno.git/'
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git push origin master
+Username for 'https://github.com': octomarciano@gmail.com
+Password for 'https://octomarciano@gmail.com@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Charbrown08/carlos_moreno.git
+   ea4e341..6d4d684  master -> master
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git config --global credential.helper cache
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno# git pull -v
+POST git-upload-pack (155 bytes)
+From https://github.com/Charbrown08/carlos_moreno
+ = [up to date]      master     -> origin/master
+ = [up to date]      footer     -> origin/footer
+ = [up to date]      header     -> origin/header
+Already up to date.
+root@ubuntu-s-1vcpu-1gb-amd-sfo3-01:~/proyectone/carlos_moreno#
