@@ -73,7 +73,7 @@ p{
 
 #footer{
     font-size:25px ;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: inherit;
     text-align: left;
     margin-right: 30px;
     margin-left: 50px;
