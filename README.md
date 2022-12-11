@@ -27,6 +27,8 @@ $ npm start
 Side information: To use the application in a special environment use ```lorem ipsum``` to start
 ## Collaboration
 ***
+
+CREADO POR EL INCREIBLE CARLOS MORENO
 Give instructions on how to collaborate with your project.
 > Maybe you want to write a quote in this part. 
 > It should go over several rows?
