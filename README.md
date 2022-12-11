@@ -29,6 +29,8 @@ Side information: To use the application in a special environment use ```lorem i
 ***
 
 CREADO POR EL INCREIBLE CARLOS MORENO
+incluyes ejemploes en mas
+
 Give instructions on how to collaborate with your project.
 > Maybe you want to write a quote in this part. 
 > It should go over several rows?
